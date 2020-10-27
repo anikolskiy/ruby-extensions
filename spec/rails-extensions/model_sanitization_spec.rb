@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 describe ModelSanitization do
   class SanitizationTestModel < ActiveRecord::Base
     include ModelSanitization

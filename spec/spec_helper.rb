@@ -1,7 +1,10 @@
 require 'rubygems'
 require 'bundler/setup'
 
+require 'rails/all'
 require 'rspec/rails'
+
+load File.join(File.dirname(__FILE__), '../lib/ruby-extensions.rb')
 
 ActiveRecord::Base.establish_connection(
   adapter:  "sqlite3",
